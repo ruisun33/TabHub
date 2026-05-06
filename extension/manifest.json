@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "TabHub",
+  "version": "1.0.0",
+  "description": "Your tab command center. New tab page that groups open tabs by domain so you can navigate and close them fast.",
+  "permissions": ["tabs", "activeTab", "storage", "tabGroups"],
+  "chrome_url_overrides": { "newtab": "index.html" },
+  "background": { "service_worker": "background.js", "scripts": ["background.js"] },
+  "action": {
+    "default_title": "TabHub",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tabhub@tabhub.dev",
+      "strict_min_version": "138.0"
+    }
+  }
+}

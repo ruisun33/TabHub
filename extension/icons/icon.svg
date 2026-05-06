@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Warm dark background -->
+  <rect width="128" height="128" rx="26" fill="#1a1613"/>
+  <!-- Amber hub bar at top — represents the new tab dashboard -->
+  <rect x="18" y="26" width="92" height="20" rx="6" fill="#c8713a"/>
+  <!-- First row: two domain group cards -->
+  <rect x="18" y="56" width="42" height="16" rx="5" fill="white" opacity="0.9"/>
+  <rect x="68" y="56" width="42" height="16" rx="5" fill="white" opacity="0.55"/>
+  <!-- Second row: three smaller domain cards -->
+  <rect x="18" y="80" width="26" height="16" rx="5" fill="white" opacity="0.3"/>
+  <rect x="51" y="80" width="26" height="16" rx="5" fill="white" opacity="0.3"/>
+  <rect x="84" y="80" width="26" height="16" rx="5" fill="white" opacity="0.3"/>
+</svg>
