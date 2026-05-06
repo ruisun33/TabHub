@@ -58,6 +58,12 @@ cd Tabout
 
 ---
 
+## Credits
+
+TabHub is based on [Tab Out](https://github.com/zarazhangrui/tab-out) by [Zara Zhang](https://github.com/zarazhangrui).
+
+---
+
 ## License
 
 MIT
