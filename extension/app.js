@@ -1297,6 +1297,7 @@ document.addEventListener('click', async (e) => {
     const allUrls = openTabs
       .filter(t => t.url && !t.url.startsWith('chrome') && !t.url.startsWith('about:'))
       .map(t => t.url);
+    await closeTabsByUrls(allUrls);
 
     document.querySelectorAll('#openTabsMissions .mission-card').forEach(c => {
       shootConfetti(
@@ -1307,7 +1308,6 @@ document.addEventListener('click', async (e) => {
     });
 
     showToast('All tabs closed. Fresh start.');
-    await closeTabsByUrls(allUrls);
     return;
   }
 });
