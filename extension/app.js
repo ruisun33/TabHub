@@ -354,6 +354,8 @@ function shootConfetti(x, y) {
 function animateCardOut(card) {
   if (!card) return;
 
+  const rect = card.getBoundingClientRect();
+  shootConfetti(rect.left + rect.width / 2, rect.top + rect.height / 2);
   card.classList.add('closing');
   setTimeout(() => {
     card.remove();
